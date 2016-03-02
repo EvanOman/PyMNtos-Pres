@@ -6,12 +6,13 @@ import matplotlib.pyplot as plt
 import time
 # import pylab
 
-
-def singPertParam(n1, d, beta, angle, n, m, itermax, xmin, xmax, ymin, ymax, filename, colorMap):
+# TODO: Refactor to take a function of two params: first phase, second param (which we will be iterating over)
+def singPertParam(filename, n1 = 2, d = 2, beta = 0.0, angle = 0.0, n = 1000, m = 1000, itermax = 100, xmin = -2, xmax = 2, ymin = 2, ymax = 2, colorMap = "spectral"):
     """
     Creates a 2 dimensional PARAMETER image of a singular perturbation of the complex quadratic map:
         z = z**n1 + c2 + (beta)/(z.conjugate()**d)
 
+    :param filename:
     :param n1: exponent of main phase term
     :param d: exponent of conjugate phase term
     :param beta: perturbation parameter
@@ -23,7 +24,6 @@ def singPertParam(n1, d, beta, angle, n, m, itermax, xmin, xmax, ymin, ymax, fil
     :param xmax:
     :param ymin:
     :param ymax:
-    :param filename:
     :param colorMap: string name of Pillow colormap to use
     :return: null, writes image to file
     """
@@ -89,7 +89,7 @@ def singPertParam(n1, d, beta, angle, n, m, itermax, xmin, xmax, ymin, ymax, fil
         image.set_cmap(colorMap)
         image.write_png(filename+'.png', noscale=True)
 
-
+# TODO: Refactor to take a function of a single param: phase (which we will be iterating over)
 #Creates a 2 dimensional PHASE image of a singular perturbation of the complex quadratic map
 ##z = z**n1 + c2 + (beta)/(z.conjugate()**d)
 def singPertPhase(n1,d,beta,c2,n, m, itermax, xmin, xmax, ymin, ymax,filename,colorMap):

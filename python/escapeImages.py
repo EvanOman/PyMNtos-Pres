@@ -6,7 +6,13 @@ import matplotlib.pyplot as plt
 import time
 # import pylab
 
-# TODO: Refactor to take a function of two params: first phase, second param (which we will be iterating over)
+# TODO: Refactor to take a function of two params: first phase, second param (which we will be iterating over).
+# Also need to pass the value of the critical point (not always easily infer-able)
+
+# def singPertParam(fn, critPoint, n, m, itermax, xmin, xmax, ymin, ymax, colorMap)
+
+
+
 def singPertParam(filename, n1 = 2, d = 2, beta = 0.0, angle = 0.0, n = 1000, m = 1000, itermax = 100, xmin = -2, xmax = 2, ymin = 2, ymax = 2, colorMap = "spectral"):
     """
     Creates a 2 dimensional PARAMETER image of a singular perturbation of the complex quadratic map:

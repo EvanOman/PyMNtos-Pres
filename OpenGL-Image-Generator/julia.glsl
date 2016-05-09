@@ -18,7 +18,8 @@ void main() {
 
 		float x = c.x + z.x * z.x - z.y * z.y + (.001 * z.x * z.x)/((z.x * z.x + z.y *z.y) * (z.x * z.x + z.y *z.y)) - (.001 * z.y * z.y)/((z.x * z.x + z.y *z.y)*(z.x * z.x + z.y *z.y));
 		float y = 2*z.x*z.y + (.002* z.x * z.y)/((z.x * z.x + z.y *z.y) * (z.x * z.x + z.y *z.y)) + c.y;
-
+		
+		// TODO: This is a lazy escape radius for this function, it can be computed explicately, FIX IT!
 		if((x * x + y * y) > 4.0) break;
 		z.x = x;
 		z.y = y;

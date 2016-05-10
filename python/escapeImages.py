@@ -87,7 +87,7 @@ def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=10
     # sets those points which have not yet escaped to itermax + 1 (which is to say that these points took the longest
     #  to escape, or didn't)
     img[img == 0] = itermax + 1
-    
+
     # Reverses the colormap for aesthetic reasons
     img = abs(itermax - img)
 
@@ -95,6 +95,11 @@ def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=10
     fig = plt.figure()
 
     image = plt.imshow(img.T, origin='lower left')
+    ax = plt.gca()
+    newXTicks = ["%.2f" % x for x in np.linspace(xmin, xmax, len(ax.get_xticks()) - 1)]
+    newYTicks = ["%.2f" % x for x in np.linspace(ymin, ymax, len(ax.get_yticks()) - 1)]
+    ax.set_xticklabels([''] + newXTicks) # God knows why I need that empty string at the beginning
+    ax.set_yticklabels([''] + newYTicks)
 
     # Sets the color map if is it is non-empty
     if not colorMap == "":
@@ -175,6 +180,10 @@ def escImgPhase(fName=None, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m
     fig = plt.figure()
 
     image = plt.imshow(img.T, origin='lower left')
+    newXTicks = ["%.2f" % x for x in np.linspace(xmin, xmax, len(ax.get_xticks()) - 1)]
+    newYTicks = ["%.2f" % x for x in np.linspace(ymin, ymax, len(ax.get_yticks()) - 1)]
+    ax.set_xticklabels([''] + newXTicks) # God knows why I need that empty string at the beginning
+    ax.set_yticklabels([''] + newYTicks)
 
     # Sets the color map if is it is non-empty
     if not colorMap == "":

@@ -1,10 +1,19 @@
+"""
+    escapeImages.py
+
+    Contains the escape image generation algortithm as developed by Dan Goodman here:
+    https://thesamovar.wordpress.com/2009/03/22/fast-fractals-with-python-and-numpy/
+
+    What I have done is generalize his algorithm to accept any well-behaving lambda and I have added a parameter space
+    version of his code.
+
+    This code is specifically being used for a PyMNtos presentation on 5/12/16
+"""
+
+
 import numpy as np
 import math
-# from scipy import ndimage
 import matplotlib.pyplot as plt
-# from PIL import Image
-import time
-# import pylab
 
 # TODO: Refactor to take a function of two params: first phase, second param (which we will be iterating over).
 # Also need to pass the value of the critical point (not always easily infer-able)
@@ -15,7 +24,7 @@ def quadMap(phase, param): return phase*phase + param
 
 # TODO: Could use the same function for both phases & param images, would just need to switch parameter orders?
 
-def escImgParam(fName, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2, ymin=-2, ymax=2, colorMap="spectral"):
+def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2, ymin=-2, ymax=2, colorMap="spectral"):
     """
        Creates a 2 dimensional PARAMETER image of whatever function is passed in (as fn)
 
@@ -75,17 +84,28 @@ def escImgParam(fName, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=1000, i
         # Filter out all escaped values
         z, ix, iy, c = z[rem], ix[rem], iy[rem], c[rem]
 
-     # sets those points which have not yet escaped to itermax + 1 (which is to say that these points took the longest to escape, or didnt)
+    # sets those points which have not yet escaped to itermax + 1 (which is to say that these points took the longest
+    #  to escape, or didn't)
     img[img == 0] = itermax + 1
+    
+    # Reverses the colormap for aesthetic reasons
+    img = abs(itermax - img)
+
+    # create a new figure
+    fig = plt.figure()
 
     image = plt.imshow(img.T, origin='lower left')
+
+    # Sets the color map if is it is non-empty
     if not colorMap == "":
         image.set_cmap(colorMap)
+
+    # writes to file if a filename is given
+    if fName is not None:
         image.write_png(fName + ".png", noscale=True)
-        # image.show()
 
 
-def escImgPhase(fName, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2, ymin=-2, ymax=2, colorMap="spectral"):
+def escImgPhase(fName=None, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2, ymin=-2, ymax=2, colorMap="spectral"):
     """
        Creates a 2 dimensional PARAMETER image of whatever function is passed in (as fn)
 
@@ -144,10 +164,22 @@ def escImgPhase(fName, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m=1000
         # Filter out all escaped values
         z, ix, iy = z[rem], ix[rem], iy[rem]
 
-        # sets those points which have not yet escaped to itermax + 1 (which is to say that these points took the longest to escape, or didnt)
+    # sets those points which have not yet escaped to itermax + 1 (which is to say that these points took the longest
+    # to escape, or didnt)
     img[img == 0] = itermax + 1
+
+    # Reverses the colormap for aesthetic reasons
+    img = abs(itermax - img)
+
+    # create a new figure
+    fig = plt.figure()
+
     image = plt.imshow(img.T, origin='lower left')
+
+    # Sets the color map if is it is non-empty
     if not colorMap == "":
         image.set_cmap(colorMap)
+
+    # writes to file if a filename is given
+    if fName is not None:
         image.write_png(fName + ".png", noscale=True)
-        # image.show()

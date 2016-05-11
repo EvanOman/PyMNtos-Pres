@@ -24,7 +24,8 @@ def quadMap(phase, param): return phase*phase + param
 
 # TODO: Could use the same function for both phases & param images, would just need to switch parameter orders?
 
-def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2, ymin=-2, ymax=2, colorMap="spectral"):
+def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2,
+                ymin=-2, ymax=2, colorMap="nipy_spectral", showAxes=False, interp="None"):
     """
        Creates a 2 dimensional PARAMETER image of whatever function is passed in (as fn)
 
@@ -94,12 +95,17 @@ def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=10
     # create a new figure
     fig = plt.figure()
 
-    image = plt.imshow(img.T, origin='lower left')
+    image = plt.imshow(img.T, origin='lower left', interpolation=interp)
     ax = plt.gca()
     newXTicks = ["%.2f" % x for x in np.linspace(xmin, xmax, len(ax.get_xticks()) - 1)]
     newYTicks = ["%.2f" % x for x in np.linspace(ymin, ymax, len(ax.get_yticks()) - 1)]
     ax.set_xticklabels([''] + newXTicks) # God knows why I need that empty string at the beginning
     ax.set_yticklabels([''] + newYTicks)
+
+    # Show Axes if needed
+    if showAxes:
+        plt.axhline(m//2, color='white', linewidth=1)
+        plt.axvline(n//2, color='white')
 
     # Sets the color map if is it is non-empty
     if not colorMap == "":
@@ -110,7 +116,8 @@ def escImgParam(fName=None, fn=quadMap, critPoint=0, escapeRad=2.0, n=1000, m=10
         image.write_png(fName + ".png", noscale=True)
 
 
-def escImgPhase(fName=None, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2, ymin=-2, ymax=2, colorMap="spectral"):
+def escImgPhase(fName=None, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m=1000, itermax=100, xmin=-2, xmax=2,
+                ymin=-2, ymax=2, colorMap="nipy_spectral", showAxes=False):
     """
        Creates a 2 dimensional PARAMETER image of whatever function is passed in (as fn)
 
@@ -180,10 +187,16 @@ def escImgPhase(fName=None, fn=lambda x: quadMap(x, 0), escapeRad=2.0, n=1000, m
     fig = plt.figure()
 
     image = plt.imshow(img.T, origin='lower left')
+    ax = plt.gca()
     newXTicks = ["%.2f" % x for x in np.linspace(xmin, xmax, len(ax.get_xticks()) - 1)]
     newYTicks = ["%.2f" % x for x in np.linspace(ymin, ymax, len(ax.get_yticks()) - 1)]
     ax.set_xticklabels([''] + newXTicks) # God knows why I need that empty string at the beginning
     ax.set_yticklabels([''] + newYTicks)
+
+    # Show Axes if needed
+    if showAxes:
+        plt.axhline(500, color='white', linewidth=1)
+        plt.axvline(500, color='white')
 
     # Sets the color map if is it is non-empty
     if not colorMap == "":

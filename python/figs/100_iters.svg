@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="608.48889"
-     inkscape:cy="718.33568"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="595.99686"
+     inkscape:cy="-114.73159"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,8 +56,8 @@
      transform="translate(0,-52.362126)">
     <path
        inkscape:connector-curvature="0"
-       d="m 0.00500286,55.224283 0,999.999917 M 333.33499,55.224283 l 0,999.999917 m 333.32998,-999.999917 0,999.999917 M 999.995,55.224283 l 0,999.999917 M 0.00500286,55.224283 l 999.99999714,0 M 0.00500286,388.55427 l 999.99999714,0 M 0.00500286,721.88425 l 999.99999714,0 M 0.00500286,1055.2142 l 999.99999714,0"
-       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0.00346845,55.222724 0,995.053276 M 333.33448,55.222724 l 0,995.053276 m 333.331,-995.053276 0,995.053276 m 333.33105,-995.053276 0,995.053276 M 0.00346845,55.222724 l 1000.00303155,0 M 0.00346845,386.90383 l 1000.00303155,0 M 0.00346845,718.58494 l 1000.00303155,0 M 0.00346845,1050.266 l 1000.00303155,0"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:0.99752512pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path4476" />
     <rect
        style="fill:#000000;stroke:#000000;stroke-width:2.98423529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -89,7 +89,7 @@
          id="tspan4480-4"
          x="136.18436"
          y="581.43225"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -101,7 +101,7 @@
          id="tspan4480-6"
          x="806.75574"
          y="578.57507"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -113,7 +113,7 @@
          id="tspan4480-5"
          x="476.94864"
          y="248.83429"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -125,7 +125,7 @@
          id="tspan4480-4-3"
          x="135.25417"
          y="248.86086"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -137,7 +137,7 @@
          id="tspan4480-6-7"
          x="806.11127"
          y="244.5751"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -149,7 +149,7 @@
          id="tspan4480-5-8"
          x="477.3772"
          y="923.11993"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -161,7 +161,7 @@
          id="tspan4480-4-3-2"
          x="136.82558"
          y="922.57507"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -173,6 +173,6 @@
          id="tspan4480-6-7-3"
          x="811.39697"
          y="921.7179"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">0</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
   </g>
 </svg>

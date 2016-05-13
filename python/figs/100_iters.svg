@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="595.99686"
-     inkscape:cy="-114.73159"
+     inkscape:zoom="0.50000001"
+     inkscape:cx="520.60449"
+     inkscape:cy="270.62539"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,8 +64,15 @@
        id="rect4657"
        width="330.76593"
        height="331.44434"
-       x="334.86957"
+       x="330.86957"
        y="389.49707" />
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:2.98423529;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4657-2"
+       width="330.76593"
+       height="331.44434"
+       x="2.6170197"
+       y="384.63998" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
@@ -80,16 +87,16 @@
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic';fill:#ffffff;">100</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="136.18436"
+       style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#d30000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="98.184357"
        y="581.43225"
        id="text4478-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4480-4"
-         x="136.18436"
+         x="98.184357"
          y="581.43225"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic';fill:#ffffff;fill-opacity:1">100</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -101,7 +108,7 @@
          id="tspan4480-6"
          x="806.75574"
          y="578.57507"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -137,7 +144,7 @@
          id="tspan4480-6-7"
          x="806.11127"
          y="244.5751"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:81.53877258px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -173,6 +180,6 @@
          id="tspan4480-6-7-3"
          x="811.39697"
          y="921.7179"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">1</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PLMathItalic5;-inkscape-font-specification:'PLMathItalic5 Italic'">2</tspan></text>
   </g>
 </svg>
